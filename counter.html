@@ -1,0 +1,90 @@
+<html>
+
+
+
+
+
+<style>
+    * {
+        text-align: center;
+        background-color: black;
+    }
+
+    #p1 {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        color: white;
+    }
+
+    #p2 {
+        color: white;
+    }
+
+    h1 {
+        color: rgb(207, 41, 41);
+    }
+
+    button {
+        background-color: rgb(125, 120, 197);
+        color: white;
+        height: 30px;
+        width: 80px;
+        border-radius: 10px;
+        box-shadow: 2px 1px rgb(226, 201, 201);
+    }
+</style>
+
+
+
+
+
+
+
+
+<body>
+    <p id="p1">Sample App</p>
+    <p id="p2">(To get you the Idea about HTML CSS and JS)</p>
+    <h1>Counter App</h1>
+    <h1 id="count">0</h1>
+    <button id="add">Add</button>
+    <button id="sub">Sub</button>
+</body>
+
+
+
+
+
+
+<script>
+
+
+    var add = document.getElementById("add");
+
+    //console.log(typeof(count))
+
+    add.addEventListener("click", () => {
+        //count = count+1;
+
+        var c = document.getElementById("count")
+        var count = Number(document.getElementById("count").innerHTML);
+        count = Number(count);
+        console.log(count)
+        c.innerHTML = count + 1;
+    });
+
+
+    sub.addEventListener("click", () => {
+        //count = count+1;
+
+        var s = document.getElementById("count")
+        var count2 = Number(document.getElementById("count").innerHTML);
+        count2 = Number(count2);
+        console.log(count2)
+        s.innerHTML = count2 - 1;
+    });
+
+
+</script>
+
+</html>
